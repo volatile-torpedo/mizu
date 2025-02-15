@@ -9,16 +9,16 @@ Mizu
 ## In progress for the next commit
 - [ ] Improved summary
 - [ ] InstallThis.ps1 with an interactive installation for (hopefully) the growing list.
-- [ ] Removal of default Windows applications 
+- [ ] Removal of default Windows applications
+- [ ] Use https://shield.io for status of each application
 
 ## For future commits
 - [ ] CSV support for custom list of apps to install 
 
 ## Installed Apps
 | App Installed | Status | Mizu Version | Notes |
-|----------|----------|----------|----------|
-| scoop    | Data     | Data     | Data     |
-| PowerToys    | Data     | Data     | Data     |
-| Azure CLI    | Data     | Data     | Data     |
-| UniGetUI    | Data     | Data     | Data     |
-| Row 5    | Data     | Data     | Data     |
+|---------------|--------|--------------|-------|
+| scoop        | In Progress     | 0.1_alpha | |
+| PowerToys    | In Progress     | 0.1_alpha | |
+| Azure CLI    | In Progress     | 0.1_alpha | |
+| UniGetUI     | In Progress     | 0.1_alpha | |
