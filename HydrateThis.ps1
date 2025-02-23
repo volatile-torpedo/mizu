@@ -136,72 +136,63 @@ function Show-MenuOptions-Header {
         Write-CenteredText "*** Not Running in an elevated context. Some Optons are not available ***" -TextColor Black -BackgroundColor DarkYellow 
     }
         
-    # h01 ╭══ FLO-Hydrate Options Menu ───────────────────────────────────────────────────────────╮
-    # h02 │                                                     ╭─┐                               │
-    # h03 │              ╭─────┬─╮    ___       ┌─╮ ╭─┐         │ │         ┌─╮      o            │
-    # h04 │              │ ┌───┤ │   ╱‾‾‾╲      │ │ │ ├─╮ ╭─┐ __│ ├╮╭──╮──╮─┘ └─┐────╮            │
-    # h05 │              │ └─╮ │ │  │ ╭─╮ │┌───╮┤ └─┤ │ │ │ │╱‾‾` | ╭─╭──╮╰─┬ ┌┬╯ _) │            │
-    # h06 │              │ ┌─┘ │ └──┤ ╰─╯ │╰───┘┤ ├─╮ │ ├.┤ │ (_│ │ │ │ (_| │ ││ ┌───┘            │
-    # h07 │              │ │   ╰────╯╲___╱      │ │ └─╯\__, |╲__,_┤ |  ╲__,_│ ││ ╰┌──╮            │
-    # h08 │              │ │          ‾‾‾       ╰─┘    ╭─┐┤ │     ╰─┘       │ │╰─────╯            │
-    # h09 │              └─╯                           ╰────╯               ╰─┘                   │           
-    # h10 ├───────────────────────────────────────────────────────────────────────────────────────┤
-    # h02 │                                                     ╭─┐                               │
-    # h03 │              ╭──────╮┌─╮    ___       ┌─╮ ╭─┐         │ │         ┌─╮      o            │
-    # h04 │              │ ├─╮ ├─╮ │  ╱‾‾‾╲      │ │ │ ├─╮ ╭─┐ __│ ├╮╭──╮──╮─┘ └─┐────╮            │
-    # h05 │              │ │ │ │ │ │─╮ │┌───╮┤ └─┤ │ │ │ │╱‾‾` | ╭─╭──╮╰─┬ ┌┬╯ _) │            │
-    # h06 │              │ │ │ │ │ │ ─┤ ╰─╯ │╰───┘┤ ├─╮ │ ├.┤ │ (_│ │ │ │ (_| │ ││ ┌───┘            │
-    # h07 │              │ │ ╰─┘ │ ╰────╯╲___╱      │ │ └─╯\__, |╲__,_┤ |  ╲__,_│ ││ ╰┌──╮            │
-    # h08 │              │ │     ╰─┘     ‾‾‾       ╰─┘    ╭─┐┤ │     ╰─┘       │ │╰─────╯            │
-    # h09 │              └─╯                           ╰────╯               ╰─┘                   │           
+    # h01 ╭══ Features Menu ══════════════════════════════════════════════════════════════════════╮
+    # h02 │                            o           ╭─╮                                            │
+    # h03 │                             ╭──────╮┌─╮╰─╯┌────┐┌─╮ ╭─┐oo                             │
+    # h04 │                             │ ├─╮ ├─╮ │ ─╮│ ┌╮ ││ │ │ │                               │
+    # h05 │                             │ │ │ │ │ ││ │└─╯/ /│ │ │ │                               │
+    # h06 │                             │ │ │ │ │ ││ │  / /┌─ ┤ │ │                               │
+    # h07 │                             │ │ ╰─┘ │ ╰──┘┌╯ ╰─┤ ┤ ─╯ │                               │
+    # h08 │                           oo│ │     ╰─┘   ╰──────┘────╯oo                             │
+    # h09 │                             └─╯                                                       │
     # h10 ├───────────────────────────────────────────────────────────────────────────────────────┤
     # h11 │                                                                                       │
     # h12 │  Type a corresponding key to toggle an opion:                                         │
     # h13 │                                                                                       │
     
     # Line h01
-    Write-Host "  ╭── " -ForegroundColor Green -NoNewline
-    Write-Host "FLO-Stasis Options Menu" -ForegroundColor White -NoNewline 
-    Write-Host " ────────────────────────────────────────────────────────────╮" -ForegroundColor Green
+    Write-Host "  ╭══ " -ForegroundColor Green -NoNewline
+    Write-Host "Features Menu" -ForegroundColor White -NoNewline 
+    Write-Host " ══════════════════════════════════════════════════════════════════════╮" -ForegroundColor Green
     
     # Line h02
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "                                                     ╭─┐                               " -ForegroundColor Yellow -NoNewline
+    Write-Host "                            o           ╭─╮                                            " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h03
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              ╭─────┬─╮    ___       ┌─╮ ╭─┐         │ │         ┌─╮      o            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             ╭──────╮┌─╮╰─╯┌────┐┌─╮ ╭─┐oo                             " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
 
     # Line h04
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              │ ┌───┤ │   ╱‾‾‾╲      │ │ │ ├─╮ ╭─┐ __│ ├╮╭──╮──╮─┘ └─┐────╮            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             │ ├─╮ ├─╮ │ ─╮│ ┌╮ ││ │ │ │                               " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
 
     # Line h05
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              │ └─╮ │ │  │ ╭─╮ │┌───╮┤ └─┤ │ │ │ │╱‾‾`` | ╭─╭──╮╰─┬ ┌┬╯ _) │            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             │ │ │ │ │ ││ │└─╯/ /│ │ │ │                               " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
 
     # Line h06
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              │ ┌─┘ │ └──┤ ╰─╯ │╰───┘┤ ├─╮ │ ├.┤ │ (_│ │ │ │ (_| │ ││ ┌───┘            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             │ │ │ │ │ ││ │  / /┌─ ┤ │ │                               " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h07
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              │ │   ╰────╯╲___╱      │ │ └─╯\__, |╲__,_┤ |  ╲__,_│ ││ ╰┌──╮            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             │ │ ╰─┘ │ ╰──┘┌╯ ╰─┤ ┤ ─╯ │                               " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h08
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              │ │          ‾‾‾       ╰─┘    ╭─┐┤ │     ╰─┘       │ │╰─────╯            " -ForegroundColor Yellow -NoNewline
+    Write-Host "                           oo│ │     ╰─┘   ╰──────┘────╯oo                             " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h09
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "              └─╯                           ╰────╯               ╰─┘                   " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             └─╯                                                       " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h10-h11
