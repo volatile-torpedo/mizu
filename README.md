@@ -24,7 +24,7 @@ Mizu
 | scoop         | ![Progress](https://progress-bar.xyz/28/)  | 0.1_alpha    |                    |
 | git           | ![Progress](https://progress-bar.xyz/28/)  | 0.1_alpha    | Required for Scoop |
 | PowerToys     | ![Progress](https://progress-bar.xyz/0/)   | 0.1_alpha    |                    |
-| VS Code       | ![Progress](https://progress-bar.xyz/0/)   | 0.1_alpha    |                    |
+| VS Code       | ![Progress](https://progress-bar.xyz/0/)   | 0.1_alpha    |                    | 
 
 ### Azure Tools & Utilities
 
