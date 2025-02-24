@@ -79,8 +79,8 @@ function Show-MenuOptions {
     # Show-MenuOptions-Body
 
     # Menu Options Body
-    # b01 │  [A] Trim Generally Useless Windows Apps                            [Not Selected]    │
-    # b02 │  [B] Trim Communications Apps (OneDrive, Teams, etc.)               [Not Selected]    │
+    # b01 │  [A] Core (Scoop, Git)                                                  [Required]    │
+    # b02 │  [B] Install Tetrakeys                                              [Not Selected]    │
     # b03 │  [C] Install FLO-Stasis (shortcut keys, hostrings)             [Not Yet Available]    │
     # b04 │  [D] Install apps that require an elevated prompt                  [Not Available]    │
     # b05 │  [E] Trim Windows for this and future profiles                    [Not Available*]    │
@@ -133,7 +133,7 @@ function Show-MenuOptions-Header {
         Write-CenteredText "*** Running in an elevated context ***" -TextColor Yellow -BackgroundColor DarkRed 
     }
     else { 
-        Write-CenteredText "*** Not Running in an elevated context. Some Optons are not available ***" -TextColor Black -BackgroundColor DarkYellow 
+        Write-CenteredText "*** Confirmed: Not running in an elevated prompt ***" -TextColor Black -BackgroundColor DarkYellow 
     }
         
     # h01 ╭══ Features Menu ══════════════════════════════════════════════════════════════════════╮
@@ -142,7 +142,7 @@ function Show-MenuOptions-Header {
     # h04 │                             │ ├─╮ ├─╮ │ ─╮│ ┌╮ ││ │ │ │                               │
     # h05 │                             │ │ │ │ │ ││ │└─╯/ /│ │ │ │                               │
     # h06 │                             │ │ │ │ │ ││ │  / /┌─ ┤ │ │                               │
-    # h07 │                             │ │ ╰─┘ │ ╰──┘┌╯ ╰─┤ ┤ ─╯ │                               │
+    # h07 │                             │ │ ╰─┘ │ ╰──┘╭/ ╰─┤ ┤ ─╯ │                               │
     # h08 │                           oo│ │     ╰─┘   ╰──────┘────╯oo                             │
     # h09 │                             └─╯                                                       │
     # h10 ├───────────────────────────────────────────────────────────────────────────────────────┤
@@ -182,7 +182,7 @@ function Show-MenuOptions-Header {
     
     # Line h07
     Write-Host "  │" -ForegroundColor Green -NoNewline
-    Write-Host "                             │ │ ╰─┘ │ ╰──┘┌╯ ╰─┤ ┤ ─╯ │                               " -ForegroundColor Yellow -NoNewline
+    Write-Host "                             │ │ ╰─┘ │ ╰──┘╭/ ╰─┤ ┤ ─╯ │                               " -ForegroundColor Yellow -NoNewline
     Write-Host "│" -ForegroundColor Green
     
     # Line h08
@@ -360,14 +360,11 @@ Exit
 #     Exit
 #}
 
-# ┌─────┬─╮    ___       ┌─╮ ╭─┐         ╭─┐         ┌─╮      o     ┌───┬───┐ ╭───┬───╮      
-# │ ┌───┤ │   ╱‾‾‾╲      │ │ │ ├─╮ ╭─┐ __│ ├┐╭──╮──╮─┤ └─┐────╮     │   │   │ │   │   │
-# │ └─╮ │ │  │ ╭─╮ │┌───╮┤ └─┤ │ │ │ │╱‾‾` | ╭─┬╯  ` │ ┌┬╯ _) │     ├───┼───┤ ├───┼───┤
-# │ ┌─┘ │ └──┤ ╰─╯ │╰───┘┤ ├─╮ │ ├.┤ │ (_│ │ │ │ (_| │ ││ ┌───┘     │   │   │ │   │   │ 
-# │ │   ╰────╯╲___╱      │ │ └─╯\__, |╲__,_┤ |  ╲__,_| || ╰┌──╮     └───┴───┘ ╰───┴───╯
-# └─╯          ‾‾‾       ╰─┘    ╭─┐┤ │     ╰─┘       ╰─┘╰─────╯
-#                               ╰────╯
-
+#  ┌───┬───┐ ╭───┬───╮      
+#  │   │   │ │   │   │
+#  ├───┼───┤ ├───┼───┤
+#  │   │   │ │   │   │ 
+#  └───┴───┘ ╰───┴───╯ 
 
 ## Set Execution Policy for subsequent scripts
 # Set-ExecutionPolicy RemoteSigned -scope CurrentUser -Force
